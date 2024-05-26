@@ -1,0 +1,14 @@
+body{
+    max-width: 1420px;
+    margin: 0 auto;
+    margin-left: 300px
+}
+@import "./reset";
+@import "./bloks/navigation";
+@import "./bloks/hero";
+@import "./bloks/fashion";
+@import "./bloks/experience";
+@import "./bloks/love";
+@import "./bloks/questions";
+@import "./bloks/seamless";
+@import "./bloks/footer";

@@ -1,0 +1,88 @@
+@font-face {
+    font-family: monospace;
+    src: url(/fonts/Manrope-Regular.woff2);
+}
+
+.container-questions {
+    margin: 20px;
+    padding-top: 150px;
+    margin-left: 40px;
+}
+
+h1 {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.book__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding-top: 60px;
+    margin-left: 40px;
+}
+
+.book {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 767px) {
+    .container-questions {
+        margin: 10px;
+        padding-top: 80px;
+        margin-left: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .book__wrapper {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding-top: 40px;
+        margin-left: 20px;
+    }
+
+    .book {
+        padding: 14px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

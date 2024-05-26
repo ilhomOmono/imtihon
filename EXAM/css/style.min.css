@@ -1,0 +1,410 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+* {
+  font-family: "Manrope regular";
+}
+
+@font-face {
+  font-family: "Manrope Medium";
+  src: url(../fonts/Manrope-Medium.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Manrope regular";
+  src: url(../fonts/Manrope-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Manrope bold";
+  src: url(../fonts/Manrope-Bold.woff2) format("woff2");
+}
+:root {
+  --white-color: #fff;
+  --cecondary-color: #656567;
+  --main-color: #1A1A1A;
+  --main-font: "Manrope Medium";
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nav-bar {
+  background-color: #000;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.nav-bar__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 0;
+}
+
+.nav-bar__title p {
+  color: var(--white-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav {
+  padding-top: 40px;
+}
+
+.nav__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.active {
+  color: #262626;
+}
+
+.header__content {
+  max-width: 50%;
+}
+
+.header__h2 {
+  max-width: 100%;
+  font-family: Manrope;
+  font-size: 38px;
+  width: 530px;
+  height: 104px;
+  color: rgb(26, 26, 26);
+}
+
+.header__p {
+  max-width: 100%;
+  font-family: Manrope;
+  font-size: 16px;
+  width: 675px;
+  height: 48px;
+  color: gba(101, 101, 103, 1);
+}
+
+.header__btn {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  background-color: rgb(255, 212, 0);
+  padding: 18px 45px;
+  border-radius: 30px;
+}
+
+.header__btn:hover {
+  color: rgb(255, 212, 0);
+  background-color: #000;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header__bten {
+  background-color: white;
+}
+
+.header__bten:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.headerbtn__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.headercard__h2 {
+  max-width: 100%;
+  font-family: Manrope;
+  font-size: 26px;
+  width: 265.5px;
+  color: rgb(26, 26, 26);
+}
+
+.headercard__p {
+  max-width: 100%;
+  font-family: Manrope;
+  font-size: 16px;
+  color: rgb(101, 101, 103);
+  margin-top: 10px;
+}
+
+.header__card {
+  background-color: #fff;
+  padding: 20px 0px 20px 10px;
+  border-radius: 10px;
+}
+
+.header__cardwrapper {
+  background-color: rgb(241, 241, 243);
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+
+.discover__h2 {
+  max-width: 100%;
+  font-family: Manrope;
+  font-size: 38px;
+  color: rgb(26, 26, 26);
+}
+
+.discover__p {
+  max-width: 100%;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(101, 101, 103);
+  margin-top: 20px;
+}
+
+.discover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tur1 {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  width: 27px;
+  color: rgb(152, 152, 154);
+}
+
+.tur2 {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 600;
+  width: 90px;
+  color: rgb(26, 26, 26);
+}
+
+.tur {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid rgb(152, 152, 154);
+  border-top: 1px solid rgb(152, 152, 154);
+  padding: 10px;
+  margin-top: 80px;
+}
+
+.discover__cardh2 {
+  font-family: Manrope;
+  font-size: 16px;
+  width: 297.5px;
+  color: rgb(38, 38, 38);
+  margin-top: 16px;
+}
+
+.discover__cardhp {
+  font-family: Manrope;
+  font-size: 16px;
+  color: rgb(76, 76, 77);
+}
+
+.discover__card__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 80px;
+}
+
+.discover__card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header__card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header__img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.discover {
+  margin-top: 80px;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box1 {
+  font-family: Manrope;
+  font-size: 18px;
+  width: 281.67px;
+  color: rgb(38, 38, 38);
+}
+
+.box2 {
+  font-family: Manrope;
+  font-size: 14px;
+  width: 339.67px;
+  color: rgb(101, 101, 103);
+  margin-top: 16px;
+}
+
+.expriens__card__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 60px;
+}
+
+.expriens__card {
+  padding: 10px 10px 10px 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.box3 {
+  font-family: Manrope;
+  font-size: 16px;
+  width: 187.33px;
+  color: rgb(38, 38, 38);
+}
+
+.costumer__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

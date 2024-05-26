@@ -1,0 +1,116 @@
+@font-face {
+    font-family: monospace;
+    src: url(/fonts/Manrope-Regular.woff2);
+}
+
+.seamless__wrapper {
+    text-align: left;
+    max-width: 600px;
+    padding-top: 70px;
+    margin-left: 40px;
+    
+    @media (max-width: 768px) {
+        padding-top: 20px;
+        margin-left: 10px;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.card__wrapper__5 {
+    display: flex;
+    gap: 20px;
+    padding-top: 55px;
+    margin-left: 40px;
+   
+
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+        margin-left: 10px;
+    }
+}
+
+.card__5 {
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #e0e0e0;
+    height: 186px;
+    
+    @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+}
+.card__5:hover{
+    transform: scale(1.1);
+}
+
+.card5__num {
+    font-size: 60px;
+    color: #e0e0e0;
+    font-weight: bold;
+    
+    @media (max-width: 768px) {
+        font-size: 40px;
+    }
+}
+
+.card5__content h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+    
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.card5__content p {
+    color: #666;
+    
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

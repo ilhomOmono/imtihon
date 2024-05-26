@@ -1,0 +1,179 @@
+@font-face {
+    font-family: monospace;
+    src: url(/fonts/Manrope-Regular.woff2);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.email-subscribe {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.email-subscribe input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.email-subscribe button {
+    margin-left: -5px;
+    padding: 11px 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.list__wrapper {
+    margin-right: 40px;
+}
+
+.list__wrapper h3 {
+    font-size: 1.2em;
+}
+
+.list__wrapper ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list__wrapper ul li {
+    padding: 5px 0;
+}
+
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+}
+
+.footer__box1, .footer__box3, .footer__box2 {
+    display: flex;
+    align-items: center;
+}
+
+.footer__box1 a,
+.footer__box2 p {
+    color: #555;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.footer__box1 a:hover {
+    text-decoration: underline;
+}
+
+.footer__box1 span {
+    margin: 0 0.5rem;
+    color: #bbb;
+}
+
+.footer__box3 .footer__icon {
+    margin: 0 0.5rem;
+    color: #fff;
+    background-color: #110f0f;
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+
+.footer__box2 p {
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .box1 {
+        margin-bottom: 30px;
+    }
+
+    .box2 {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .list__wrapper {
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer__wrapper {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .footer__box1, .footer__box3, .footer__box2 {
+        text-align: center;
+        display: flex;
+    }
+
+    .footer__box1 a, .footer__box2 p {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer__box1 span {
+        display: none;
+    }
+
+    .footer__box3 .footer__icon {
+        margin: 0.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
